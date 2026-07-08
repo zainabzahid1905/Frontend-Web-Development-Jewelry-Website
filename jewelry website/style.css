@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ece1d6;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;     /* page se chipka rahega */
+  top: 0;              /* bilkul upar */
+  left: 0;
+  width: 100%;         /* poori width le */
+  z-index: 1000;       /* hamesha sab cheezon ke upar dikhe */
+ 
+}
+
+.logo {
+  color: #83644a;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 24%;
+    
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links{
+    flex: 4;
+  display: flex;
+  justify-content: center;
+}
+.navbar ul li a {
+  color: #83644a;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 4px;
+}
+.mainpic {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  height: 100vh;            /* full screen height */
+}
+
+.mainpic img {
+  width: 1000px; /* or your preferred size */
+}
+  .maincard {
+  display: flex;
+  justify-content: center;   /* centers all cards */
+  gap: 30px;                 /* spacing between cards */
+  flex-wrap: wrap;           /* wraps on small screens */
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 18rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 290px;
+  
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #83644a;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #83644a;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #5f4a36;
+}
+.section2{
+  margin-top: 230px;
+  display: flex;
+align-items: center;
+ justify-content: center;  
+  gap: 50px;   
+  color: #5f4a36;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+.section2 img{
+  width: 490px;
+  height: 590px;
+}
+.div1 p{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.section3{
+  display: flex;
+align-items: center;
+ justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #654321;
+}
+.section3 img{
+  margin-top: 50px;
+  display: flex;
+width: 1100px;
+  height: 700px;
+opacity: 0.5;
+}
+.centered{
+  margin-top: 240px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size:xx-large;
+  font-weight: bolder;
+}
+.centered p{
+  font-size: large;
+  font-weight: lighter;
+}
+.footer {
+  margin-top: 50px;
+  background-color: #83644a;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 70px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+ .div2{
+  margin-top: 20px;
+margin-left: 90px;
+ }
+ 
+.div2 p {
+  font-size: xx-large;
+  margin-bottom: none;
+}
+.div2 ul {
+  list-style: none;
+  font-size: larger;
+}
+
+.div2 ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.div2 ul li a:hover {
+  background-color: #654321;
+  color: white;
+}
+
+.follow-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: xx-large;
+}
+
+i {
+  font-size: 66px;
+  color: white;
+}
+p{
+  font-size: x-large;
+}
+#category{
+  width: 0rem; 
+  background-color: transparent;
+  border-radius: 0;
+   box-shadow: none;
+  overflow: none;
+  margin-left: 0px;
+    width: 250px;
+}
+
+#category-body{
+    /* position: absolute; */
+  /* left: 50px; */
+  /* width: 200px;
+  height: 120px; */
+    padding: 20px;
+  width: auto;
+  height: auto;
+  position: static;
+}
+.maincard2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1400px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  position: absolute;
+  top: 350px; 
+  /* Navbar ke neeche stick karega */
+}
+
+.cards {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 240px;
+}
+.cards > .card{
+   width: 25%;
+  box-sizing: border-box;
+  
+}
+#button{
+  background-color: transparent;
+  color: #654321;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 17px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #128C7E;
+}
+video{
+  width: 100%;
+  height: 590px;
+}
+.featured-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.featured-section h2 span {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 80px;
+  padding: 20px 0;
+  margin-left: 240px;
+}
+
+.circle-card {
+  flex: 0 0 auto;
+  width: 130px;
+  text-align: center;
+}
+
+.circle-card img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.circle-card img:hover {
+  transform: scale(1.05);
+}
+h1{
+  color: #654321;
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  align-items: center;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.contact-box i,.insta i {
+  font-size: 40px;
+  background-color:#654321;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.contact-box h3 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-box p {
+  font-size: 16px;
+  color: #000;
+}
+
+.contact-box i:hover {
+  transform: scale(1.1);
+}
+.typic{
+  width: 80%;
+  height: auto;
+  
+}
+/* the 3D structure in about us page */
+.carousel-container {
+  margin-top: 300px;
+  position: relative;
+  width: 350px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 600px;
+}
+
+.carousel1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.next, .prev {
+  position: absolute;
+  top: 50%;
+  background: #8f7860;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/* to make it pop like we press a button */
+.next:active, .prev:active {
+   top: calc(50% + 4px); 
+   }
+   /* position of buttons */
+.prev { left: -350px; }
+.next { right: -350px; }
